@@ -35,7 +35,7 @@ public class Address
     @Column(name = "postal_code", nullable = false, length = 5)
     private String postalCode;
 
-    @Column(name = "references", nullable = true, length = 255)
+    @Column(name = "`references`", nullable = true, length = 255)
     private String references;
 
 }

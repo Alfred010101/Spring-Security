@@ -50,17 +50,17 @@ public class User implements UserDetails
     @Column(name = "email", nullable = false, unique = true, length = 63)
     private String username;
 
-    @Column(name = "password", nullable = false, length = 31)
+    @Column(name = "`password`", nullable = false, length = 100)
     private String password;
 
     @Column(name = "fk_address", nullable = false)
-    private Integer address;
+    private Integer addressId;
 
     @Column(name = "phone", nullable = false, length = 20)
     private String phone;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "role", nullable = false)
+    @Column(name = "`role`", nullable = false)
     private Role role; 
 
     @Override
