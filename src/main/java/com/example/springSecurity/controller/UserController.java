@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 
 @RestController
-@RequestMapping("/api/v1/uer")
+@RequestMapping("/api/v1/user")
 @RequiredArgsConstructor
 public class UserController {
 
@@ -29,7 +29,7 @@ public class UserController {
     @GetMapping
     public String welcome()
     {
-        return "Welcome Spring Security";
+        return "Welcome Spring Security... as user";
     }
     
 }
